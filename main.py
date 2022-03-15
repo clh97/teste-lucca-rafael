@@ -13,6 +13,9 @@ def main():
     resultado = x - y
   elif operador == '*':
     resultado = x * y
+  elif operador == '/':
+    resultado = x / y
+
 
   print('resultado: ', resultado)
 
