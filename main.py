@@ -1,4 +1,5 @@
 def main():
+  print("Calculadora bolada")
   x = int(input('escolha o primeiro numero: '))
   y = int(input('escolha o segundo numero: '))
 
