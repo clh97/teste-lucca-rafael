@@ -20,28 +20,14 @@ saida = datetime.strptime(data_saida_str, '%H:%M')
 
 total = (saida - entrada)
 
-#valor = (total.total_seconds()/3600) * 6.0
-valor = (total.total_seconds()/3600)
+total_horas = (total.total_seconds()/3600)
+valor = total_horas * 6.0
+print('Valor: R$ {:.2f}'.format(valor))
+valor = valor + (total_horas * 2.0)
+
+print('Valor: R$ {:.2f}'.format(valor))
 
 
-#print('Valor: R$ {:.2f}'.format(valor))
-#print('Valor: R$ {}'.format(valor))
-if valor < 1.0:
-    print('$4,00')
-elif valor >= 1.0:
-    print('$6,00')
-elif valor < 2.0:
-    print('$6,00')
-elif valor >= 6.0:
-    print('$10,00')
-elif valor < 12.0:
-    print('$10,00')
-elif valor >= 12.0:
-    print('$15,00')
-elif valor < 24.0:
-    print('$15,00')
-elif valor == 24.0:
-    print('$25,00')
 
 
 
